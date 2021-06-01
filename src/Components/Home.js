@@ -3,14 +3,19 @@ import '../Styles/Home.css';
 import Banner from './Banner';
 import Card from "./Card";
 
+import Slider from './Slider/Slider';
+import images from './Slider/images';
+
 // ES7 snippets to do 'rfce'
 
 function Home() {
     return (
         <div className="home">
+
             {/* <h1>Home component</h1> */}
             <Banner/>
-
+            <Slider slides={images} autoPlay={3} />
+            
             <div className="home__section">
                 <Card
                     src="https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_960_720.jpg"

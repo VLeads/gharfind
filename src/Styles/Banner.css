@@ -1,11 +1,11 @@
 /* import home from './home.png'; */
 
-.banner {
+/* .banner {
     background: url("../home.png") no-repeat center center;
     height: 90vh;
     background-size: 1200px 80vh;
     position: relative;  
-}
+} */
 
 .banner__info {
     background-color: black;
