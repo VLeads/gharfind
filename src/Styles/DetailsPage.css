@@ -1,0 +1,15 @@
+.mainContainer {
+    display:flex;
+    margin: 10px;
+}
+
+.roomImg{
+    padding:20px 20px 20px 30px;
+}
+
+.bookRoom{
+    padding:20px 20px 20px 180px;
+}
+
+
+

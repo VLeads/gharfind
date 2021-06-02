@@ -5,6 +5,9 @@ import SearchPage from './Components/SearchPage';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import DetailsPage from "./Components/DetailsPage";
+import Auth from "./Components/Auth";
+
 import './App.css';
 
 
@@ -21,6 +24,14 @@ function App() {
         <Switch>
           <Route path="/search">
             <SearchPage />
+          </Route>
+
+          <Route path="/details">
+            <DetailsPage />
+          </Route>
+
+          <Route path="/auth">
+            <Auth />
           </Route>
 
           <Route path="/">

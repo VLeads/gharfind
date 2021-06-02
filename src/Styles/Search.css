@@ -12,14 +12,14 @@
     justify-content: space-between;
     width: 559px;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
     position: absolute;
     left: 0;
     top: 380px; 
 }
 
 .search > input {
-    width: 539px;
+    width: 543px;
     padding: 20px;
     position: absolute;
     left: 0;
