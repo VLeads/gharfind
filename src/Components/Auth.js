@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "../Styles/Auth.css";
 import fire from "./Fire";
 import Login from './Login';
-import Hero from "./Hero";
+import Home from "./Home";
 // import Home from './Home';
 
 function Auth() {
@@ -60,11 +60,9 @@ function Auth() {
         });
     };
 
-    const handleLogout = () => {
-        fire.auth().signOut().then(() => {
-            console.log('user signed out');
-        })
-    };
+    // const handleLogout = () => {
+    //     fire.auth().signOut();
+    // };
 
     const authListener = () => {
         fire.auth().onAuthStateChanged((user) => {
@@ -84,7 +82,7 @@ function Auth() {
     return (
         <div>
             {user ? (
-                <Hero handleLogout={handleLogout} />
+                <Home />
             ) : (
                 <Login
                     email={email}

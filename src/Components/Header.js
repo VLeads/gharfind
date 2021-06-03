@@ -7,9 +7,14 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Avatar, Button } from "@material-ui/core";
 //we 👆 imported "Avatar" as a component, not an icon. Because we want profile image in that circular shape when user logged in
 import { Link } from "react-router-dom";
+import Auth from "./Auth";
+import fire from "./Fire";
+import Host from "./Host";
 
-const Header = () => {
 
+const Header = (hasAccount) => {
+
+    
     return (
         <div className="header">
             {/* <a href> tag refresh the page, therefore we've not used that
@@ -28,14 +33,19 @@ const Header = () => {
             </div>
 
             <div className="header__right">
-                <Button variant="outlined" color="secondary">Host your listing</Button> 
+                <Link to='/host' style={{ textDecoration: 'none' }}>
+                    <Button variant="outlined" color="secondary" style={{textTransform: 'inherit'}}>Host your listing</Button> 
+                </Link>
                 {/* <LanguageIcon /> */}
 
-            
-                <Link to='/auth' style={{ textDecoration: 'none' }}>
-                    <Button variant='contained' color="primary">Signup/Signin</Button>
-                </Link>
-            
+                {/* toggle button based on user login or logout */}
+                {hasAccount ? (
+                    <Button variant='contained' color="secondary" onClick={() => fire.auth().signOut()} >Logout</Button>
+                ) : (
+                    <Link to='/auth' style={{ textDecoration: 'none' }}>
+                        <Button variant='contained' color="primary" style={{textTransform: 'inherit'}}>Signup/Signin</Button>
+                    </Link>
+                )}
             
                 {/* <ExpandMoreIcon /> */}
                 <Avatar />

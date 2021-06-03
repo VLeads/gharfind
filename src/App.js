@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import DetailsPage from "./Components/DetailsPage";
 import Auth from "./Components/Auth";
+import Host from "./Components/Host";
 
 import './App.css';
 
@@ -26,17 +27,22 @@ function App() {
             <SearchPage />
           </Route>
 
+          <Route path="/auth">
+            <Auth />
+          </Route>
+
           <Route path="/details">
             <DetailsPage />
           </Route>
 
-          <Route path="/auth">
-            <Auth />
+          <Route path="/host">
+            <Host />
           </Route>
 
           <Route path="/">
             <Home />
           </Route>
+
         </Switch>
        
         

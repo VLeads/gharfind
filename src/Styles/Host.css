@@ -1,0 +1,9 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label {
+    margin: 20px 0 10px 20px;
+    /* align-items: inline; */
+}
