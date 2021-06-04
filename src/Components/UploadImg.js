@@ -36,7 +36,7 @@ class UploadImg extends Component {
       }, 
     () => {
         // complete function ....
-        storage.ref('images').child(image.name).getDownloadURL().then(url => {
+        firestore.ref('images').child(image.name).getDownloadURL().then(url => {
             console.log(url);
             this.setState({url});
         })
@@ -55,7 +55,6 @@ class UploadImg extends Component {
         <img src={this.state.url || 'http://via.placeholder.com/400x300'} alt="Uploaded images" height="300" width="400"/>
         <br />
         <button onClick={this.handleUpload}>Upload Room Picture</button>
-        
       </div>
     )
   }
