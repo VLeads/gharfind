@@ -47,7 +47,7 @@ class UploadImg extends Component {
     return (
       <div className="upload">
       <progress value={this.state.progress} max="100"/>
-      <br/>
+      <br/> 
         <input type="file" 
         onChange={this.handleChange}
         />
