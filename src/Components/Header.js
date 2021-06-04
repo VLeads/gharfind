@@ -14,6 +14,9 @@ import Host from "./Host";
 
 const Header = (hasAccount) => {
 
+    const handleSubmit = (e) => {
+        alert("⚠ Note: Currently search function is in development !!")
+    }
     
     return (
         <div className="header">
@@ -28,8 +31,8 @@ const Header = (hasAccount) => {
             </Link>
 
             <div className="header__center">
-                <input type="text" />
-                <SearchIcon />
+                    <input onChange={handleSubmit} type="text" />
+                    <SearchIcon />                
             </div>
 
             <div className="header__right">
@@ -45,7 +48,11 @@ const Header = (hasAccount) => {
                 <Link to='/auth' style={{ textDecoration: 'none' }}>
                         <Button variant='contained' color="primary" style={{textTransform: 'inherit'}}>Signup/Signin</Button>
                 </Link>
-                
+
+                <Avatar />
+
+                <Button variant='contained' color="secondary" onClick={() => fire.auth().signOut()} >Logout</Button>
+                 
 
                 {/* commented for short time */}
                 {/* {hasAccount ? (
@@ -57,7 +64,7 @@ const Header = (hasAccount) => {
                 )} */}
             
                 {/* <ExpandMoreIcon /> */}
-                <Avatar />
+                
             </div>
         </div>
     )
