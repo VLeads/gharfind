@@ -2,7 +2,7 @@ import firebase from "firebase";
 import 'firebase/firestore';
 
 var firebaseConfig = {
-    apiKey: "AIzaSyBruf4pbJJHPj_jdwlVDnzF_q_GPOvGt2I",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "gharfind-28.firebaseapp.com",
     projectId: "gharfind-28",
     storageBucket: "gharfind-28.appspot.com",
