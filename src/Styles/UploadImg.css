@@ -1,0 +1,15 @@
+.upload {
+    height: '100vh';
+    display: 'flex';
+    flex-direction: 'column';
+  /* //   alignItems: 'center', */
+  margin-left: 20px;;
+    justify-content: 'center'
+}
+
+.upload > button {
+    margin-left: 20px;
+    height: 30px;
+    width: 250px;
+    padding: 3px;
+}

@@ -1,5 +1,5 @@
 .header {
-    height: 120px;
+    height: 110px;
     display: flex;
     justify-content: space-between; /*it will give space between each element*/
     align-items: center;
@@ -41,6 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25vw;
+    width: 26vw;
     margin-right: 40px;
 }

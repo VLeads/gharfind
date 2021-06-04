@@ -11,10 +11,12 @@ const Host = () => {
 
     return (
         <form onClick={(e) => handleForm(e)}>
+           
+            <UploadImg />
+
             <label>Full Name: 
                 <input type="text" name="name" required/>
             </label>
-            <UploadImg />
             <label>State: 
                 <input type="text" name="state" required/>
             </label>
