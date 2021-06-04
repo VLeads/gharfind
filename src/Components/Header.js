@@ -34,18 +34,27 @@ const Header = (hasAccount) => {
 
             <div className="header__right">
                 <Link to='/host' style={{ textDecoration: 'none' }}>
-                    <Button variant="outlined" color="secondary" style={{textTransform: 'inherit'}}>Host your listing</Button> 
+                    <Button variant="outlined" color="primary" style={{textTransform: 'inherit'}}>Host Room</Button> 
                 </Link>
                 {/* <LanguageIcon /> */}
 
                 {/* toggle button based on user login or logout */}
-                {hasAccount ? (
+
+
+                
+                <Link to='/auth' style={{ textDecoration: 'none' }}>
+                        <Button variant='contained' color="primary" style={{textTransform: 'inherit'}}>Signup/Signin</Button>
+                </Link>
+                
+
+                {/* commented for short time */}
+                {/* {hasAccount ? (
                     <Button variant='contained' color="secondary" onClick={() => fire.auth().signOut()} >Logout</Button>
                 ) : (
                     <Link to='/auth' style={{ textDecoration: 'none' }}>
                         <Button variant='contained' color="primary" style={{textTransform: 'inherit'}}>Signup/Signin</Button>
                     </Link>
-                )}
+                )} */}
             
                 {/* <ExpandMoreIcon /> */}
                 <Avatar />

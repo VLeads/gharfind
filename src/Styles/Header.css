@@ -41,6 +41,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 26vw;
+    width: 20vw;
     margin-right: 40px;
+}
+
+.header__right > Button {
+    width: 90px;
 }
