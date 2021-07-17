@@ -9,7 +9,6 @@ import DetailsPage from "./Components/DetailsPage";
 import Auth from "./Components/Auth";
 import Host from "./Components/Host";
 
-import './App.css';
 
 
 // To use router, we need switch 
