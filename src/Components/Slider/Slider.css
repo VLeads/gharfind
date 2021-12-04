@@ -1,0 +1,15 @@
+
+.slider-img-parent>img {
+    width: 100vw;
+    height: 34rem
+}
+
+.slides .slick-prev {
+    left: 3% !important;
+    z-index: 1;
+}
+
+.slides .slick-next {
+    right: 3% !important;
+    z-index: 1;
+}
