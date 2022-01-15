@@ -1,9 +1,9 @@
 import React from "react";
-import "../Styles/Home.css";
-import Banner from "./Banner";
-import Card from "./Card";
+import "./Home.css";
+import Banner from "../../Components/Banner";
+import Card from "../../Components/Card";
 
-import HomePageSlider from "./Slider/HomePageSlider";
+import HomePageSlider from "../../Components/Slider/HomePageSlider";
 // import images from './Slider/images';
 
 // ES7 snippets to do 'rfce'

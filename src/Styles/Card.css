@@ -1,4 +1,4 @@
-.card {
+.roomcard {
     margin: 1rem;
     margin-left: 46px;
     /* margin-right: 5px; */
@@ -10,10 +10,10 @@
     width: 275px;
     text-align: center;
 }
-.card:hover {
+.roomcard:hover {
     transform: scale(1.07);
 }
-.card > img {
+.roomcard > img {
     object-fit: fill;
     max-width: 100%;
     height: 250px;
@@ -23,18 +23,18 @@
     width: 100%; */
 }
 
-.card__info{
+.roomcard__info{
     margin-top: -9px;
     border-radius: 10px;
     padding: 20px;
     padding-top: 20px;
     border: 1;
 }
-.card__info > h2{
+.roomcard__info > h2{
     font-size: 18px;
     font-weight: 600;
 }
-.card__info > h4 {
+.roomcard__info > h4 {
     font-size: 14px;
     font-weight: 300;
     margin-top: 8px;

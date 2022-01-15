@@ -1,7 +1,8 @@
 
 .slider-img-parent>img {
     width: 100vw;
-    height: 34rem
+    /* height: 35.5rem */
+    height: 90vh;
 }
 
 .slides .slick-prev {

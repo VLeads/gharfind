@@ -10,7 +10,7 @@ import { Avatar, Button } from "@material-ui/core";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 //we 👆 imported "Avatar" as a component, not an icon. Because we want profile image in that circular shape when user logged in
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Auth from "./Auth";
 import fire from "./Fire";
 import Host from "./Host";
@@ -34,9 +34,9 @@ const Header = (hasAccount) => {
     <div className="header">
       {/* <a href> tag refresh the page, therefore we've not used that
             "<Link>" don't refresh the page */}
-      <Link to="/">
+      <NavLink to="/" activeStyle={{ color: "blue" }}>
         <img className="header__icon" src={logo} alt="GharFind logo" />
-      </Link>
+      </NavLink>
 
       <div className="header__center">
         <input onChange={handleSubmit} type="text" />
@@ -44,7 +44,11 @@ const Header = (hasAccount) => {
       </div>
 
       <div className="header__right">
-        <Link to="/host" style={{ textDecoration: "none" }}>
+        <NavLink
+          to="/host"
+          activeStyle={{ backgroundColor: "lightblue" }}
+          style={{ textDecoration: "none" }}
+        >
           <Button
             variant="outlined"
             color="primary"
@@ -52,7 +56,7 @@ const Header = (hasAccount) => {
           >
             Host Room
           </Button>
-        </Link>
+        </NavLink>
         {/* <LanguageIcon /> */}
 
         {/* toggle button based on user login or logout */}
@@ -84,9 +88,13 @@ const Header = (hasAccount) => {
         >
           <MenuItem>Profile</MenuItem>
           <MenuItem>
-            <Link to="/auth" style={{ textDecoration: "none" }}>
+            <NavLink
+              to="/auth"
+              activeStyle={{ color: "blue" }}
+              style={{ textDecoration: "none" }}
+            >
               Sign up/in
-            </Link>
+            </NavLink>
           </MenuItem>
           <MenuItem onClick={() => fire.auth().signOut()}>Logout</MenuItem>
         </Menu>
