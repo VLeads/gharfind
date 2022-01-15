@@ -23,7 +23,7 @@ function Home() {
           description="Spaces that are more than just a place to sleep"
         />
         <Card
-          src="https://cdn.pixabay.com/photo/2015/07/10/19/33/red-840058_960_720.jpg"
+          src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
           title="Entire homes"
           description="Comfortable private places, with room for friends & family"
         />
