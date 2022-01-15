@@ -49,6 +49,7 @@
 .searchResult__infoBottom {
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .searchResult__star{
@@ -70,3 +71,10 @@
     text-align: right;
 }
 
+.home-location{
+    margin-bottom: 8px;
+}
+
+.home-title{
+    margin-bottom: 8px;
+}
